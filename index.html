@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template de Trivia</title>
+</head>
+<body>
+    <section class="frame" id="start">
+        <img src="" alt="" class="logo">
+    </section>
+    <section class="frame" id="form">
+        <form>
+            <div class="field">
+                <label for="name">Nombre completo</label>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="field">
+                <label for="phone">Teléfono</label>
+                <input type="number" name="phone" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="field field-radio">
+                <label for="isClient">¿Es cliente de la empresa?</label>
+                <input type="radio" name="isClient" value="true"> <label for="isClient">Sí</label>
+                <input type="radio" name="isClient" value="false"> <label for="isClient">No</label>
+            </div>
+
+            <div class="field">
+                <label for="reason">Nos elige principalmente por:</label>
+                <select name="reason" id="">
+                    <option value="op0" selected disabled>Seleccione una cualidad</option>
+                    <optgroup label="Productos">
+                        <option value="op1">Calidad</option>
+                        <option value="op2">Precio</option>
+                    </optgroup>
+                    <optgroup label="Servicios">
+                        <option value="op4">Post Venta</option>
+                        <option value="op5">Mantenimiento</option>
+                        <option value="op6">Asesoramiento</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="field">
+                <input type="submit" id="form-button" value="Guardar y jugar">
+            </div>
+        </form>
+    </section>
+    <section class="frame"></section>
+    <section class="frame"></section>
+</body>
+</html>
