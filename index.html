@@ -15,7 +15,7 @@
             Tocá la pantalla para empezar...
         </p>
     </section>
-    <section class="frame frame-" id="form">
+    <section class="frame frame-wait" id="form">
         <form>
             <div class="field">
                 <label for="name">Nombre completo</label>
@@ -65,7 +65,7 @@
         <button class="option-button">Historia</button>
         <button class="option-button">Ciencia</button>
         <button class="option-button">Entretenimiento</button>
-        <p class="description">Preguntas: 0 de 3</p>
+        <p class="description counter">Preguntas: 0 de 3</p>
     </section>
     <section class="frame frame-wait" id="trivia">
         <h2 class="quest">¿Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, facilis?</h2>
@@ -74,9 +74,12 @@
         <button class="option-button">Respuesta 3</button>
         <button class="option-button">Respuesta 4</button>
     </section>
-    <section class="frame frame-wait" id="endgame">
-        <h2 class="title">¡Has ganado!</h2>
-        <p class="description">Retiralá tu premio en el stand.</p>
+    <section class="frame frame" id="endgame">
+        <div class="container">
+            <h2 class="title">¡Has ganado!</h2>
+            <p class="description">Retiralá tu premio en el stand.</p>
+            <button class="option-button" id="back-button">Volver al inicio</button>
+        </div>
     </section>
 
 
