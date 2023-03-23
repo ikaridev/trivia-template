@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template de Trivia</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/frames.css">
 </head>
 <body>
-    <section class="frame" id="start">
-        <img src="" alt="" class="logo">
+    <section class="frame frame-wait" id="start" onclick="navigate(this.id, 'form')">
+        <img src="resources/images/logo.png" alt="" class="logo">
+        <p class="description">
+            Tocá la pantalla para empezar...
+        </p>
     </section>
-    <section class="frame" id="form">
+    <section class="frame frame-" id="form">
         <form>
             <div class="field">
                 <label for="name">Nombre completo</label>
@@ -29,8 +34,8 @@
 
             <div class="field field-radio">
                 <label for="isClient">¿Es cliente de la empresa?</label>
-                <input type="radio" name="isClient" value="true"> <label for="isClient">Sí</label>
-                <input type="radio" name="isClient" value="false"> <label for="isClient">No</label>
+                <input type="radio" name="isClient" value="true"> <label class="radio-label" for="isClient">Sí</label>
+                <input type="radio" name="isClient" value="false"> <label class="radio-label" for="isClient">No</label>
             </div>
 
             <div class="field">
@@ -49,16 +54,33 @@
                 </select>
             </div>
 
-            <div class="field">
+            <div class="field field-button">
                 <input type="submit" id="form-button" value="Guardar y jugar">
             </div>
         </form>
     </section>
-    <section class="frame" id="pre-trivia">
-        <h1>¡Elegí, respondé y ganá!</h1>
-        <p>Seleccioná una categoría para responder una pregunta. Si tu respuesta es correcta te llevás un premio.</p>
-        
+    <section class="frame frame-wait" id="pre-trivia">
+        <h1 class="title">¡Elegí, respondé y ganá!</h1>
+        <p class="description">Seleccioná una categoría para responder una pregunta. Si tu respuesta es correcta te llevás un premio.</p>
+        <button class="option-button">Historia</button>
+        <button class="option-button">Ciencia</button>
+        <button class="option-button">Entretenimiento</button>
+        <p class="description">Preguntas: 0 de 3</p>
     </section>
-    <section class="frame"></section>
+    <section class="frame frame-wait" id="trivia">
+        <h2 class="quest">¿Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, facilis?</h2>
+        <button class="option-button">Respuesta 1</button>
+        <button class="option-button">Respuesta 2</button>
+        <button class="option-button">Respuesta 3</button>
+        <button class="option-button">Respuesta 4</button>
+    </section>
+    <section class="frame frame-wait" id="endgame">
+        <h2 class="title">¡Has ganado!</h2>
+        <p class="description">Retiralá tu premio en el stand.</p>
+    </section>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
