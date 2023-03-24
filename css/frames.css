@@ -147,14 +147,17 @@ ESTILOS ESPECÍFICOS
     padding: 14px;
     font-weight: 500;
     margin-bottom: 30px;
+    transition: 0.2s all;
 }
 
-#trivia .counter
+#trivia .correct
 {
-    position: absolute;
-    bottom: 10vh;
-    left: 50%;
-    transform: translateX(-50%);
+    background-color: lightgreen;
+}
+
+#trivia .incorrect
+{
+    background-color: lightcoral;
 }
 
 /* ENDGAME */

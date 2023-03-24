@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/frames.css">
 </head>
 <body>
-    <section class="frame frame-wait" id="start" onclick="navigate(this.id, 'form')">
+    <section class="frame frame" id="start">
         <img src="resources/images/logo.png" alt="" class="logo">
         <p class="description">
             Tocá la pantalla para empezar...
@@ -62,22 +62,25 @@
     <section class="frame frame-wait" id="pre-trivia">
         <h1 class="title">¡Elegí, respondé y ganá!</h1>
         <p class="description">Seleccioná una categoría para responder una pregunta. Si tu respuesta es correcta te llevás un premio.</p>
-        <button class="option-button">Historia</button>
-        <button class="option-button">Ciencia</button>
-        <button class="option-button">Entretenimiento</button>
+        <button class="option-button" category="history">Historia</button>
+        <button class="option-button" category="science">Ciencia</button>
+        <button class="option-button" category="entertainment">Entretenimiento</button>
         <p class="description counter">Preguntas: 0 de 3</p>
     </section>
     <section class="frame frame-wait" id="trivia">
-        <h2 class="quest">¿Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, facilis?</h2>
-        <button class="option-button">Respuesta 1</button>
-        <button class="option-button">Respuesta 2</button>
-        <button class="option-button">Respuesta 3</button>
-        <button class="option-button">Respuesta 4</button>
+        <!-- EJEMPLO. ESTO SE GENERARÁ DESDE JAVASCRIPT questions.js-->
+        <!--
+            <h2 class="quest">¿Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, facilis?</h2>
+            <button class="option-button">Respuesta 1</button>
+            <button class="option-button">Respuesta 2</button>
+            <button class="option-button">Respuesta 3</button>
+            <button class="option-button">Respuesta 4</button>
+        -->
     </section>
-    <section class="frame frame" id="endgame">
+    <section class="frame frame-wait" id="endgame">
         <div class="container">
             <h2 class="title">¡Has ganado!</h2>
-            <p class="description">Retiralá tu premio en el stand.</p>
+            <p class="description">Retirá tu premio en el Stand</p>
             <button class="option-button" id="back-button">Volver al inicio</button>
         </div>
     </section>
@@ -85,5 +88,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/questions.js"></script>
 </body>
 </html>
